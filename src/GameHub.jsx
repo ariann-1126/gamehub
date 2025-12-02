@@ -18,7 +18,7 @@ export default function GameHub() {
         <header className="flex items-center justify-between mb-6">
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight">GameHub PRO</h1>
-            <p className="text-sm text-gray-300 mt-1">Colección profesional de juegos para mostrar a tu profesor — web first + proyectos descargables</p>
+            <p className="text-sm text-gray-300 mt-1">Colección de juegos</p>
           </div>
           <nav className="space-x-3">
             <button onClick={() => setView("home")} className={`px-4 py-2 rounded-md ${view==="home"?"bg-indigo-600":"bg-indigo-700/30"}`}>Inicio</button>
@@ -141,7 +141,7 @@ export default function GameHub() {
           </section>
         )}
 
-        <footer className="mt-10 text-center text-sm text-gray-400">Hecho con ❤ — Pide que empaquete todo en ZIP o repo Git si quieres</footer>
+        <footer className="mt-10 text-center text-sm text-gray-400">Hecho por ...</footer>
       </div>
     </div>
   );
