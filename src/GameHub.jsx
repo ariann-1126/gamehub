@@ -31,10 +31,10 @@ export default function GameHub() {
         {view === "home" && (
           <main className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <section className="col-span-2 bg-gray-800/40 p-6 rounded-2xl shadow-lg">
-              <h2 className="text-2xl font-bold mb-2">Bienvenido a tu portafolio de juegos</h2>
-              <p className="text-gray-300">Este hub te permite:</p>
+              <h2 className="text-2xl font-bold mb-2">Bienvenido al portafolio de juegos</h2>
+              <p className="text-gray-300">Esto te permite:</p>
               <ul className="list-disc ml-5 mt-3 text-gray-300">
-                <li>Jugar versiones web profesionales de los juegos (Shooter, Snake, Slots).</li>
+                <li>Jugar versiones web de los juegos (Shooter, Snake, Slots).</li>
                 <li>Descargar los proyectos en C# (Unity), Java (Swing) y Python.</li>
                 <li>Ver el código y las instrucciones para ejecutar cada proyecto localmente.</li>
               </ul>
@@ -47,9 +47,9 @@ export default function GameHub() {
             <aside className="bg-gradient-to-b from-indigo-800 to-indigo-700 p-6 rounded-2xl shadow-lg">
               <h3 className="font-semibold">Atajos</h3>
               <ol className="mt-3 text-sm text-gray-200">
-                <li>1. Jugar en el navegador (rápido y demostrable).</li>
-                <li>2. Descargar proyectos y ejecutarlos localmente para demos avanzadas.</li>
-                <li>3. Pedir un ZIP listo para entregar (incluye README y scripts).</li>
+                <li>1. Jugar en el navegador.</li>
+                <li>2. Descargar proyectos y ejecutarlos localmente.</li>
+                <li>3. Pedir un ZIP listo para entregar.</li>
               </ol>
             </aside>
           </main>
@@ -81,7 +81,7 @@ export default function GameHub() {
 
               <div className="bg-gray-900/30 p-4 rounded-lg">
                 <h4 className="font-semibold mb-2">Instrucciones rápidas</h4>
-                <p className="text-sm text-gray-300">Usa las teclas mostradas en cada juego. Las demos son responsivas y funcionan en Chrome/Edge/Firefox.</p>
+                <p className="text-sm text-gray-300">Usa las teclas mostradas en cada juego. Las demos funcionan en Chrome/Edge/Firefox.</p>
                 <div className="mt-4 space-y-2">
                   <button onClick={()=>alert('Exportar ZIP - pídeme que lo genere si quieres un ZIP descargable ahora.')} className="w-full px-3 py-2 rounded bg-indigo-600">Generar ZIP (opción)</button>
                   <a href="#pro" onClick={(e)=>{e.preventDefault(); setView('pro')}} className="block text-center text-sm text-indigo-200/90">Ver Pro Projects y descargas →</a>
